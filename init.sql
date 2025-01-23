@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS corretores_db;
+USE corretores_db;
+
+CREATE TABLE IF NOT EXISTS corretores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
+    creci VARCHAR(20) NOT NULL
+);

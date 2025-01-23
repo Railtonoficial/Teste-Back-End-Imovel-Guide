@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: corretores-web
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - corretores-network
+
+  db:
+    image: mysql:5.7
+    container_name: corretores-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: corretores_db
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - corretores-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: corretores-phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8080:80"
+    networks:
+      - corretores-network
+
+networks:
+  corretores-network:
+    driver: bridge
