@@ -30,7 +30,7 @@ Para facilitar a configuração do ambiente, utilizamos Docker. Certifique-se de
 git clone https://github.com/Railtonoficial/Teste-Back-End-Im-vel-Guide.git
 cd Teste-Back-End-Im-vel-Guide
 ````
-1. Inicie os containers:
+2. Inicie os containers:
 
 ```bash
 docker-compose up -d
