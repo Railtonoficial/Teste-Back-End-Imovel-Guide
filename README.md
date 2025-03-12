@@ -13,7 +13,7 @@ Este projeto é um sistema de cadastro e gerenciamento de corretores de imóveis
 
 ### Docker
 
-Para facilitar a configuração do ambiente, utilizamos Docker. Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina.
+Para facilitar a configuração do ambiente, utilizamos Docker.  Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina.
 
 1. Clone o repositório:
 
