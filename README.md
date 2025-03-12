@@ -9,15 +9,6 @@ Este projeto é um sistema de cadastro e gerenciamento de corretores de imóveis
 - JavaScript (jQuery)
 - Bootstrap
 
-## Estrutura do Projeto
-
-- `index.php`: Página principal com o formulário de cadastro e a lista de corretores.
-- `edit.php`: Página para editar os dados de um corretor.
-- `delete.php`: Script para excluir um corretor.
-- `db.php`: Arquivo de conexão com o banco de dados.
-- `css/style.css`: Arquivo de estilos personalizados.
-- `js/form-validation.js`: Script de validação do formulário.
-
 ## Configuração do Ambiente
 
 ### Docker
